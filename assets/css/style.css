@@ -16,19 +16,19 @@
 /* fonts */
 @font-face {
     font-family: "StretchPro";
-    src: url("./assets/fonts/StretchPro.otf") format("opentype");
+    src: url("/assets/fonts/StretchPro.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "StretchPro-Basic";
-    src: url("./assets/fonts/StretchPro-Basic.ttf") format("truetype");
+    src: url("/assets/fonts/StretchPro-Basic.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "NeueHaasDisplayRoman";
-    src: url("./assets/fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+    src: url("/assets/fonts/NeueHaasDisplayRoman.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -57,7 +57,7 @@
     height: 200vh;
     left: -50%;
     top: -50%;
-    background-image: url(./assets/img/grainy-filter.png);
+    background-image: url(/assets/img/grainy-filter.png);
     animation: grain 1.5s steps(6) infinite;
 }
 @keyframes grain {
@@ -153,7 +153,7 @@ body{
     position: sticky;
     top: 0px;
     height: 100vh;
-    background-image: url(./assets/img/planet.png);
+    background-image: url(/assets/img/planet.PNG);
     background-size: cover;
     background-position: center;
 }
@@ -222,7 +222,7 @@ body{
     .sticky{
         height: auto;
         border: 0px;
-        background-image: url(./assets/img/planet-mobile.png);
+        background-image: url(/assets/img/planet-mobile.png);
     }
     .about-content{
         display: flex;
