@@ -922,6 +922,7 @@ body{
 @media screen and (max-width: 900px) {
     .progress-container {
         overflow: visible;
+        background-color: #010101de;
     }
     .copyright {
         display: none;
