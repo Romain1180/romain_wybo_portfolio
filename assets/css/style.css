@@ -965,20 +965,33 @@ body{
         width: 101vw;
         top: -100vh; 
     }
+    /* .menu-burger{
+        background-color: red;
+    } */
     .line-1-menu {
         background-color: var(--secondColor);
         height: 2px;
         width: 60px;
+        transition: .2s linear;
     }
     .line-2-menu {
         background-color: var(--secondColor);
         height: 2px;
         width: 90px;
+        transition: .2s linear;
     }
+    /* close effect */
+    .opened .line-1-menu {
+        transform: rotate(-45deg);
+    }
+    .opened .line-2-menu {
+        transform: rotate(45deg);
+        width: 60px;
+    }
+
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
     }
     .navbar .nav-links ul li {
         margin: 5px 0px; 
