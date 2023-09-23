@@ -918,6 +918,9 @@ body{
     height: 80px;
     z-index: 200;
 }
+.copyright-mobile{
+    display: none;
+}
 
 /* menu */
 @media screen and (max-width: 900px) {
@@ -948,6 +951,8 @@ body{
         height: 120vh;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
         margin-top: 100;
         transition: all .4s ease-in-out;
         background-color: #010101de;
@@ -994,5 +999,10 @@ body{
     }
     .navbar .nav-links ul li:hover{
         filter: blur(0px);
+    }
+    .copyright-mobile{
+        display: flex;
+        justify-content: center;
+        transform: translateY(25vh);
     }
 }
