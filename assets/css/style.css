@@ -121,10 +121,11 @@ body{
     }
     #background-video {
         position: fixed;
-        left: 50%;
-        width: 100vw;
+        top: 0%;
+        left: 0%;
+        width: 100vh;
         height: 100%;
-        transform: translate(-50%, -50%);
+        transform: rotate(90deg);
         z-index: -500;
     }
 }
@@ -548,6 +549,7 @@ body{
         display: flex;
         justify-content: center;
         text-align: center;
+        text-transform: uppercase;
     }
     .top-card li{
         list-style: none;
@@ -561,16 +563,6 @@ body{
         height: 200px;
         border-radius: 200px;
         overflow: hidden;
-    }
-    .media-video::after{
-        content: '';
-        position: absolute;
-        transform: translateX(-100%);
-        z-index: 10;
-        width: 200px;
-        height: 200px;
-        border-radius: 200px;
-        pointer-events: none;
     }
 }
 
@@ -955,7 +947,6 @@ body{
         width: 100vw;
         height: 120vh;
         display: flex;
-        justify-content: center;
         align-items: center;
         margin-top: 100;
         transition: all .4s ease-in-out;
@@ -965,6 +956,8 @@ body{
     .mobile-menu {
         position: absolute;
         margin-top: 0;
+        margin-left: -1vw;
+        width: 101vw;
         top: -100vh; 
     }
     .line-1-menu {
@@ -980,11 +973,21 @@ body{
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
     .navbar .nav-links ul li {
-        margin: 25px 0px; 
-        font-size: 1.2em;
+        margin: 5px 0px; 
+        padding-left: 4vw;
+        font-weight: 600;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    .navbar .nav-links ul li:nth-child(2) {
+     border-top: 1px solid #363636;
+     border-bottom: 1px solid #363636;
+     width: 100vw;
+     padding-top: 2vh;
+     padding-bottom: 2vh;
     }
     .navbar .nav-links ul:hover li{
         filter: blur(0px);
