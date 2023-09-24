@@ -124,6 +124,11 @@ body{
         transform: rotate(90deg);
         z-index: -500;
     }
+    .custom-cursor {
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+    }
 }
 
 /* hour */
