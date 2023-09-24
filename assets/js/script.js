@@ -179,103 +179,6 @@ const observer = new IntersectionObserver(handleIntersection, observerOptions);
 observer.observe(processContent);
 
 
-
-// sticky scroll section 2 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-const stikySections2 = document.querySelectorAll('.sticky_2');
-
-window.addEventListener('scroll', (e) => {
-  for (let i = 0; i < stikySections2.length; i++) {
-    transformSection2(stikySections2[i])
-  }
-})
-
-function transformSection2(section2) {
-  const offsetTop = section2.parentElement.offsetTop;
-  const scrollSection2 = section2.querySelector('.scroll_section_2');
-  let percentage2 = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-
-  percentage2 = percentage2 < 0 ? 0 : percentage2 > 170 ? 170 : percentage2;
-  scrollSection2.style.transform = `translate3d(${-(percentage2)}vw, 0, 0)`;
-}
-// responsive sticky scroll section 2
-function handleWindowResize2() {
-  let element2 = document.querySelector(".scroll_section_2");
-  if (window.innerWidth <= 900) {
-    element2.classList.remove("scroll_section_2");
-  } else {
-    element2.classList.add("scroll_section_2");
-  }
-}
-
-// Ajouter un écouteur d'événement pour le changement de taille de la fenêtre
-window.addEventListener("resize", handleWindowResize2);
-handleWindowResize2();
-
-
-
-// scale tilte projet ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-let projetsTitle = document.querySelector('.projets-title');
-let isElementVisible = false; // Variable pour suivre l'état précédent de l'élément
-
-function isElementInViewport(el) {
-  let rect = el.getBoundingClientRect();
-  return (
-    rect.bottom <= 0 || // L'élément est complètement en haut de la fenêtre
-    rect.top >= window.innerHeight // L'élément est complètement en bas de la fenêtre
-  );
-}
-
-function moveElementUpIfVisible() {
-  const elementInViewport = isElementInViewport(projetsTitle);
-
-  if (elementInViewport && isElementVisible) {
-    // Si l'élément est complètement sorti de la vue en bas et était visible précédemment
-    projetsTitle.style.transform = 'translateY(210px)';
-    isElementVisible = false;
-  } else if (!elementInViewport && !isElementVisible) {
-    // Si l'élément n'est pas complètement sorti de la vue en bas et n'était pas visible précédemment
-    projetsTitle.style.transform = 'translateY(0px)';
-    isElementVisible = true;
-  }
-}
-window.addEventListener('scroll', moveElementUpIfVisible);
-
-
-// contact & link ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-const cursorLink = document.querySelector('.custom-cursor');
-let contact1 = document.querySelector('.contact-1');
-let contact2 = document.querySelector('.contact-2');
-let contact3 = document.querySelector('.contact-3 ');
-let contactLink2 = document.querySelector('.contact-2 a');
-let contactLink3 = document.querySelector('.contact-3 a');
-
-contact1.addEventListener('mouseover', () => {
-  contact1.style.color = '#010101';
-  cursorLink.style.backgroundColor = '#010101';
-})
-contact1.addEventListener('mouseout', () => {
-  contact1.style.color = '#C6C6C6';
-  cursorLink.style.backgroundColor = '#C6C6C6';
-})
-
-contact2.addEventListener('mouseover', () => {
-  contactLink2.style.color = '#010101';
-  cursorLink.style.backgroundColor = '#010101';
-})
-contact2.addEventListener('mouseout', () => {
-  contactLink2.style.color = '#C6C6C6';
-  cursorLink.style.backgroundColor = '#C6C6C6';
-})
-
-contact3.addEventListener('mouseover', () => {
-  contactLink3.style.color = '#010101';
-  cursorLink.style.backgroundColor = '#010101';
-})
-contact3.addEventListener('mouseout', () => {
-  contactLink3.style.color = '#C6C6C6';
-  cursorLink.style.backgroundColor = '#C6C6C6';
-})
-
 // process affiche cursor ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 let basicCursor = document.querySelector('.custom-cursor');
 
@@ -402,4 +305,101 @@ lineProcess7.addEventListener('mouseout', function(){
   basicCursor.style.borderRadius = '50%';
   basicCursor.style.width = '25px';
   basicCursor.style.height = '25px';
+})
+
+
+// sticky scroll section 2 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const stikySections2 = document.querySelectorAll('.sticky_2');
+
+window.addEventListener('scroll', (e) => {
+  for (let i = 0; i < stikySections2.length; i++) {
+    transformSection2(stikySections2[i])
+  }
+})
+
+function transformSection2(section2) {
+  const offsetTop = section2.parentElement.offsetTop;
+  const scrollSection2 = section2.querySelector('.scroll_section_2');
+  let percentage2 = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
+
+  percentage2 = percentage2 < 0 ? 0 : percentage2 > 170 ? 170 : percentage2;
+  scrollSection2.style.transform = `translate3d(${-(percentage2)}vw, 0, 0)`;
+}
+// responsive sticky scroll section 2
+function handleWindowResize2() {
+  let element2 = document.querySelector(".scroll_section_2");
+  if (window.innerWidth <= 900) {
+    element2.classList.remove("scroll_section_2");
+  } else {
+    element2.classList.add("scroll_section_2");
+  }
+}
+
+// Ajouter un écouteur d'événement pour le changement de taille de la fenêtre
+window.addEventListener("resize", handleWindowResize2);
+handleWindowResize2();
+
+
+
+// scale tilte projet ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+let projetsTitle = document.querySelector('.projets-title');
+let isElementVisible = false; // Variable pour suivre l'état précédent de l'élément
+
+function isElementInViewport(el) {
+  let rect = el.getBoundingClientRect();
+  return (
+    rect.bottom <= 0 || // L'élément est complètement en haut de la fenêtre
+    rect.top >= window.innerHeight // L'élément est complètement en bas de la fenêtre
+  );
+}
+
+function moveElementUpIfVisible() {
+  const elementInViewport = isElementInViewport(projetsTitle);
+
+  if (elementInViewport && isElementVisible) {
+    // Si l'élément est complètement sorti de la vue en bas et était visible précédemment
+    projetsTitle.style.transform = 'translateY(210px)';
+    isElementVisible = false;
+  } else if (!elementInViewport && !isElementVisible) {
+    // Si l'élément n'est pas complètement sorti de la vue en bas et n'était pas visible précédemment
+    projetsTitle.style.transform = 'translateY(0px)';
+    isElementVisible = true;
+  }
+}
+window.addEventListener('scroll', moveElementUpIfVisible);
+
+
+// contact & link ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// const cursorLink = document.querySelector('.custom-cursor');
+let contact1 = document.querySelector('.contact-1');
+let contact2 = document.querySelector('.contact-2');
+let contact3 = document.querySelector('.contact-3 ');
+let contactLink2 = document.querySelector('.contact-2 a');
+let contactLink3 = document.querySelector('.contact-3 a');
+
+contact1.addEventListener('mouseover', () => {
+  contact1.style.color = '#010101';
+  // cursorLink.style.backgroundColor = '#010101';
+})
+contact1.addEventListener('mouseout', () => {
+  contact1.style.color = '#C6C6C6';
+  // cursorLink.style.backgroundColor = '#C6C6C6';
+})
+
+contact2.addEventListener('mouseover', () => {
+  contactLink2.style.color = '#010101';
+  // cursorLink.style.backgroundColor = '#010101';
+})
+contact2.addEventListener('mouseout', () => {
+  contactLink2.style.color = '#C6C6C6';
+  // cursorLink.style.backgroundColor = '#C6C6C6';
+})
+
+contact3.addEventListener('mouseover', () => {
+  contactLink3.style.color = '#010101';
+  // cursorLink.style.backgroundColor = '#010101';
+})
+contact3.addEventListener('mouseout', () => {
+  contactLink3.style.color = '#C6C6C6';
+  // cursorLink.style.backgroundColor = '#C6C6C6';
 })
