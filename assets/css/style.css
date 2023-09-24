@@ -122,7 +122,7 @@ body{
     #background-video {
         position: fixed;
         top: 0%;
-        left: 0%;
+        left: -50%;
         width: 100vh;
         height: 100%;
         transform: rotate(90deg);
@@ -898,7 +898,7 @@ body{
     display: flex;
     color: var(--secondColor);
     list-style: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .navbar .nav-links ul li{
     cursor: pointer;
@@ -965,9 +965,6 @@ body{
         width: 101vw;
         top: -100vh; 
     }
-    /* .menu-burger{
-        background-color: red;
-    } */
     .line-1-menu {
         background-color: var(--secondColor);
         height: 2px;
@@ -981,12 +978,17 @@ body{
         transition: .2s linear;
     }
     /* close effect */
+    .opened{
+        width: 60px;
+    }
     .opened .line-1-menu {
         transform: rotate(-45deg);
+        position: absolute;
     }
     .opened .line-2-menu {
         transform: rotate(45deg);
         width: 60px;
+        position: absolute;
     }
 
     .nav-links ul {
@@ -998,7 +1000,6 @@ body{
         padding-left: 4vw;
         font-weight: 600;
         font-size: 2em;
-        text-transform: uppercase;
     }
     .navbar .nav-links ul li:nth-child(2) {
      border-top: 1px solid #363636;
