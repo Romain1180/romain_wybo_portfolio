@@ -536,11 +536,13 @@ body{
         flex-direction: column;
     }
     .assist-content{
-        display: flex;
-        justify-content: end;
         width: 100%;
+        justify-content: end;
         height: auto;
-        margin-top: 10vh;
+        margin-top: 5vh;
+    }
+    .assist{
+        transform: rotate(90deg);
     }
     .card{
         width: 100%;
