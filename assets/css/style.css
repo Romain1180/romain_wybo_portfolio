@@ -203,6 +203,10 @@ body{
     margin: 0px 60px 0px 60px;
     height: 100vh;
 }
+.about-title h2{
+    text-transform: uppercase;
+    font-weight: 400;
+}
 .about-text{
     width: 50vw;
     color: #f1f1f1;
@@ -232,8 +236,15 @@ body{
         align-items: center;
         margin: 4vw;
     }
-    .about-content img{
+    .profile-picture{
         width: 100%;
+    }
+    .about-title h2{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 5vh;
     }
     .about-text{
         width: 100%;
