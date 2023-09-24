@@ -74,7 +74,7 @@
     position: fixed;
     width: 25px;
     height: 25px;
-    background-color: var(--secondColor);
+    background-color: var(--secondColor);;
     border-radius: 50%;
     pointer-events: none; /* Permettre aux éléments en dessous d'être cliquables */
     z-index: 800;
@@ -106,10 +106,6 @@ body{
         content:"";
         width: 250vw;
         height: 250vh;
-    }
-    /* cursor */
-    .custom-cursor{
-        display: none;
     }
     /* video */
     .video-container {
@@ -256,37 +252,6 @@ body{
     }
 }
 
-/* doodle */
-/* .slider-thumb::before {
-    filter: blur(8px) drop-shadow(0em 0em 2em #9000ff8d); 
-    content: "";
-    width: 450px;
-    height: 450px;
-    background: radial-gradient(circle farthest-corner at center center, #01010100 40%, #43016f 60%, #c300ff 83%);
-    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-    will-change: border-radius, transform, opacity;
-    animation: sliderShape 6s linear infinite;
-    display: block;
-    z-index: -100;
-}
-@keyframes sliderShape{
-    0%,100%{
-    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-      transform: translate3d(0,0,0) rotateZ(0.01deg) translateX(2.5%) translateY(-2.5%);
-    }
-    34%{
-        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-      transform:  translate3d(0,5px,0) rotateZ(0.01deg)  translateX(-2.5%) translateY(2.5%);
-    }
-    50%{
-      transform: translate3d(0,0,0) rotateZ(0.01deg) translateX(2.5%) translateY(-2.5%);
-    }
-    67%{
-      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
-      transform: translate3d(0,-3px,0) rotateZ(0.01deg) translateX(-5%) translateY(2.5%);
-    }
-} */
-
 /* process container */
 .process-container {
     margin: 50px 0px 100px 0px;
@@ -323,7 +288,6 @@ body{
     transition: opacity .5s ease-in-out, transform .5s ease-in-out;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
-
 .line-2, .line-3, .line-4, .line-5, .line-6{
     border-top: 1px solid #363636;
     border-bottom: 1px solid #363636;
@@ -331,7 +295,6 @@ body{
     transition: .2s linear;
     padding: 10px 30px 10px 30px;
 }
-
 /* process mobile */
 @media screen and (max-width: 900px){
     .process-container {
