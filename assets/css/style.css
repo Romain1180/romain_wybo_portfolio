@@ -278,6 +278,7 @@ body{
     padding: 10px 30px 10px 30px;
     text-transform: capitalize;
     overflow: hidden;
+    transition: .2s linear;
 }
 .line span{
     color: #363636;
@@ -293,12 +294,36 @@ body{
     transition: opacity .5s ease-in-out, transform .5s ease-in-out;
     -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
-.line-2, .line-3, .line-4, .line-5, .line-6{
-    border-top: 1px solid #363636;
-    border-bottom: 1px solid #363636;
+.line-2, .line-3, .line-4, .line-5, .line-6, .line-7{
+    border-top: 1px solid #292929;
     border-right: 0px;
     transition: .2s linear;
     padding: 10px 30px 10px 30px;
+}
+.line:hover{
+    background-color: var(--secondColor);
+    color: var(--firtsColor);
+}
+.line-1:hover img{
+    filter: brightness(0%);
+}
+.line-2:hover img{
+    filter: brightness(0%);
+}
+.line-3:hover img{
+    filter: brightness(0%);
+}
+.line-4:hover img{
+    filter: brightness(0%);
+}
+.line-5:hover img{
+    filter: brightness(0%);
+}
+.line-6:hover img{
+    filter: brightness(0%);
+}
+.line-7:hover img{
+    filter: brightness(0%);
 }
 /* process mobile */
 @media screen and (max-width: 900px){
