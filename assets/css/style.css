@@ -203,6 +203,7 @@ body{
     justify-content: space-between;
     margin: 0px 60px 0px 60px;
     height: 100vh;
+    margin-bottom: 10vh;
 }
 .about-title h2{
     text-transform: uppercase;
@@ -229,6 +230,10 @@ body{
         height: auto;
         border: 0px;
         background-image: url(../img/planet-mobile.PNG);
+    }
+    .container-about{
+        width: 100vw;
+        height: 120vh;
     }
     .about-content{
         display: flex;
@@ -328,20 +333,14 @@ body{
 /* process mobile */
 @media screen and (max-width: 900px){
     .process-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: end;
         margin: 0px;
-        margin-top: 55vh;
+        margin-top: 30vh;
     }
     .process-content {
         display: flex;
         flex-direction: column;
         padding: 15px 0px 15px 0px;
         width: 100vw;
-    }
-    .process-center{
-        margin-top: -80%;
     }
     .slider-thumb{
         margin-top: 10%;
