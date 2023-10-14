@@ -572,9 +572,22 @@ body{
 .content-projet-1{
     width: 100%;
     height: 130vh;
-    background-color: var(--secondColor);
+    border: 1px solid #363636;
+    background-color: var(--firtsColor);
     border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
 }
+/* scene three js */
+.canvas{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 .about-projet{
     display: flex;
     justify-content: space-between;
@@ -589,8 +602,10 @@ body{
 .content-projet-2, .content-projet-3{
     width: 47vw;
     height: 60vh;
+    border: 1px solid #363636;
     background-color: var(--secondColor);
     border-radius: 50px;
+    cursor: pointer;
 }
 .content-projet-4{
     width: 47vw;
@@ -625,8 +640,14 @@ body{
         font-weight: 400;
     }
     .content-projet-1{
-        height: 27vh;
+        height: 70vh;
         border-radius: 40px;
+    }
+    .canvas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
     }
     .middle-projets{
         display: flex;
