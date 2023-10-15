@@ -22,25 +22,25 @@ var scene = new THREE.Scene();
 // create a new RGBELoader to import the HDR
 const hdrEquirect = new RGBELoader()
   // add your HDR //
-	.setPath( 'https://raw.githubusercontent.com/miroleon/gradient_hdr_freebie/main/Gradient_HDR_Freebies/' )
-	// .setPath( './assets/Gradient_HDR_Freebies/')
+	// .setPath( 'https://raw.githubusercontent.com/miroleon/gradient_hdr_freebie/main/Gradient_HDR_Freebies/' )
+	.setPath( './assets/Gradient_HDR_Freebies/')
 	.load( 'ml_gradient_freebie_02.hdr', function () {
 
   hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
-} );
+});
 scene.environment = hdrEquirect;
 
 // add Fog to the scene - if too dark go lower with the second value
-scene.fog = new THREE.FogExp2(0x11151c, 0.15);
+scene.fog = new THREE.FogExp2(0x11151c, 0.115);
 
 var group = new THREE.Group();
 scene.add(group);
 
-const pointlight = new THREE.PointLight (0x85ccb8, 2.5, 20);
+const pointlight = new THREE.PointLight (0xD9C3FF, 3.5, 20);
 pointlight.position.set (0,3,2);
 group.add (pointlight);
 
-const pointlight2 = new THREE.PointLight (0x9f85cc, 2.5, 20);
+const pointlight2 = new THREE.PointLight (0x41E8FF, 3.5, 20);
 pointlight2.position.set (0,3,2);
 group.add (pointlight2);
 
