@@ -588,6 +588,12 @@ body{
     width: 100%;
 }
 
+/* @media screen and (max-width: 900px){
+    #canvas{
+       display: none;
+    }
+} */
+
 .about-projet{
     display: flex;
     justify-content: space-between;
