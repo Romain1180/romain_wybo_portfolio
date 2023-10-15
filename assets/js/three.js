@@ -22,8 +22,8 @@ var scene = new THREE.Scene();
 // create a new RGBELoader to import the HDR
 const hdrEquirect = new RGBELoader()
   // add your HDR //
-	// .setPath( 'https://raw.githubusercontent.com/miroleon/gradient_hdr_freebie/main/Gradient_HDR_Freebies/' )
-	// .setPath( './assets/Gradient_HDR_Freebies')
+	.setPath( 'https://raw.githubusercontent.com/miroleon/gradient_hdr_freebie/main/Gradient_HDR_Freebies/' )
+	// .setPath( './assets/Gradient_HDR_Freebies/')
 	.load( 'ml_gradient_freebie_02.hdr', function () {
 
   hdrEquirect.mapping = THREE.EquirectangularReflectionMapping;
@@ -49,6 +49,19 @@ var camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeig
 camera.position.z = 10;
 // add the camera to the group
 group.add(camera);
+
+// Load the model
+const objloader = new OBJLoader();
+objloader.load(
+    './assets/porcelain/source/Porcelain_Pose.obj',
+ (object) => {
+        object.children[0].material = material1;
+        object.children[1].material = material2;
+        object.scale.setScalar( 0.03 );
+        object.position.set( 0, -3, 0 );
+        group.add(object);
+    },
+);
 
 const loader = new THREE.TextureLoader();
 
@@ -83,19 +96,6 @@ const material2 = new THREE.MeshStandardMaterial({
   envMap: hdrEquirect,
   envMapIntensity: 10
 });
-
-// Load the model
-const objloader = new OBJLoader();
-objloader.load(
-    './assets/porcelain/source/Porcelain_Pose.obj',
- (object) => {
-        object.children[0].material = material1;
-        object.children[1].material = material2;
-        object.scale.setScalar( 0.03 );
-        object.position.set( 0, -3, 0 );
-        group.add(object);
-    },
-);
 
 // POST PROCESSING
 // define the composer
