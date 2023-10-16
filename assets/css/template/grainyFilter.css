@@ -1,0 +1,33 @@
+.grainy-filter{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 800;
+    pointer-events: none;
+}
+.grainy-filter::after {
+    content:"";
+    position: fixed;
+    width: 200vw;
+    height: 200vh;
+    left: -50%;
+    top: -50%;
+    background-image: url(../../img/grainy-filter.png);
+    animation: grain 1.5s steps(6) infinite;
+}
+@keyframes grain {
+    0%, 100% {transform: translate(0,0);}
+    10% {transform: translate(-5%,-10%);}
+    30% {transform: translate(3%,-15%);}
+    50% {transform: translate(12%,9%);}
+    70% {transform: translate(9%,4%);}
+    90% {transform: translate(-1%,7%);}
+}
+
+@media screen and (max-width: 900px){
+    .grainy-filter::after {
+        content:"";
+        width: 250vw;
+        height: 250vh;
+    }
+}

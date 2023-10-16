@@ -1,0 +1,85 @@
+.progress-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    bottom: 10;
+    left: 2vw;
+    right: 2vw;
+    width: calc(100% - 4vw);
+    border: 1px solid var(--thirdColor);
+    background-color: #0101011a;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    z-index: 900;
+    overflow: hidden;
+}
+.progress-bar {
+    background-color: var(--thirdColor);
+    width: 0;
+    height: 80px;
+    border-radius: 20px 0px 0px 20px;
+}
+.progress-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+    font-size: .9em;
+}
+.copyright{
+    margin-left: 1vw;
+}
+.follow {
+    position: relative;
+    color: var(--secondColor);
+    text-decoration: none;
+    border: 1px solid var(--secondColor);
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 130px;
+    height: 55px;
+    z-index: 200;
+}
+.follow p{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+}
+.follow p:hover{
+    transform: translateY(-101%);
+}
+.follow::after{
+    content: 'Me contacter';
+    position: absolute;
+    padding: 15px;
+    left: 0;
+    top: 0;
+    border-radius: 150px 150px 0px 0px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(101%);
+    transition: .3s ease-in-out;
+    background-color: var(--secondColor);
+    color: var(--firtsColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow:hover::after{
+    transform: translateY(0%);
+    border-radius: 0px;
+}

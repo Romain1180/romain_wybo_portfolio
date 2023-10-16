@@ -1,0 +1,124 @@
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+.contact-title h2{
+    text-transform: uppercase;
+    font-size: 11em;
+    font-weight: 400;
+}
+.contact-container{
+    padding-bottom: 15vh;
+}
+.contact-media{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.link-media{
+    display: block;
+    width: 100%;
+}
+.contact-media h3{
+    font-size: 4em;
+    font-weight: 500;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.contact-media a{
+    color: var(--secondColor);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.contact-1{
+    border-top: 1px solid #363636;
+    padding-left: 4vw;
+}
+.contact-2{
+    border-top: 1px solid #363636;
+    border-bottom: 1px solid #363636;
+    padding-left: 4vw;
+}
+.contact-3{
+    border-bottom: 1px solid #363636;
+    padding-left: 4vw;
+}
+.contact-1 h3{
+    transition: .3s ease-in-out;
+}
+
+.contact-1:hover  img{
+    filter: brightness(0%); /* Réglez la luminosité à 0% (noir) lors du survol */
+    transition: .3s ease-in-out;
+}
+.contact-2:hover  img{
+    filter: brightness(0%); 
+    transition: .3s ease-in-out;
+}
+.contact-3:hover  img{
+    filter: brightness(0%); 
+    transition: .3s ease-in-out;
+}
+
+
+.contact-1::before{
+    content: '';
+    position: absolute;
+    background-color: var(--secondColor);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin-left: -4vw;
+    transform: translateY(-101%);
+    transition: .3s ease-in-out;
+    z-index: -1;
+}
+.contact-1:hover::before{
+    transform: translateY(0%);
+}
+.contact-2::before{
+    content: '';
+    position: absolute;
+    background-color: var(--secondColor);
+    width: 100%;
+    height: 100%;
+    margin-left: -4vw;
+    transform: translateY(-101%);
+    transition: .3s ease-in-out;
+    z-index: -2;
+}
+.contact-2:hover::before{
+    transform: translateY(0%);
+}
+
+.contact-3::before{
+    content: '';
+    position: absolute;
+    background-color: var(--secondColor);
+    width: 100%;
+    height: 100%;
+    margin-left: -4vw;
+    transform: translateY(-101%);
+    transition: .3s ease-in-out;
+    z-index: -3;
+}
+.contact-3:hover::before{
+    transform: translateY(0%);
+}
+
+/* contact mobile */
+@media screen and (max-width: 900px){
+    .contact-title h2{
+        font-size: 4em;
+        font-weight: 400;
+    }
+    .contact-media h3{
+        font-size: 1.5em;
+    }
+    .contact-media img{
+        width: 20px;
+    }
+}

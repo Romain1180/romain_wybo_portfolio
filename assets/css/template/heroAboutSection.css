@@ -1,0 +1,114 @@
+.sticky_patents{
+    height: 200vh;
+}
+.sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    background-image: url(../../img/planet.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.scroll_section{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 200vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4em;
+}
+
+/* hero */
+.hero-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    margin-right: 10vw; 
+}
+.hero-title h1{
+    font-family: 'StretchPro', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 2vw;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+.hero-title span{
+    font-family: 'StretchPro-Basic', sans-serif;
+}
+
+ /* about content */
+.container-about{
+    width: 100vw;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 60px 0px 60px;
+    height: 100vh;
+    margin-bottom: 10vh;
+}
+.about-title h2{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.about-text{
+    width: 50vw;
+    color: #f1f1f1;
+}
+.about-content p{
+    font-size: .7em;
+    font-weight: 500;
+}
+
+/* hero mobile*/
+@media screen and (max-width: 900px){
+    .hero-container{
+        height: 100vh;
+    }
+    .hero-title h1{
+        font-size: 2.5em;
+    }
+    .sticky{
+        height: auto;
+        border: 0px;
+        background-image: url(../../img/planet-mobile.PNG);
+    }
+    .container-about{
+        width: 100vw;
+        height: 120vh;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4vw;
+    }
+    .profile-picture{
+        width: 100%;
+    }
+    .about-title h2{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 5vh;
+    }
+    .about-text{
+        width: 100%;
+    }
+    .about-content p{
+        font-size: 1.3em;;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+}

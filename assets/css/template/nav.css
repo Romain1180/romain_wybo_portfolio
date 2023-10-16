@@ -1,0 +1,135 @@
+.navbar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+.navbar .nav-links ul{
+    display: flex;
+    color: var(--secondColor);
+    list-style: none;
+    text-transform: uppercase;
+}
+.navbar .nav-links ul li{
+    cursor: pointer;
+    transition: .5s;
+}
+.navbar .nav-links ul li{
+    margin: 0px 25px 0px;
+}
+.navbar .nav-links ul:hover li{
+    filter: blur(5px);
+}
+.navbar .nav-links ul li:hover{
+    filter: blur(0px);
+}
+.navbar .menu-burger{
+    display: none;
+    height: 80px;
+    z-index: 200;
+}
+.copyright-mobile{
+    display: none;
+}
+
+/* menu */
+@media screen and (max-width: 900px) {
+    .progress-container {
+        overflow: visible;
+        background-color: #010101de;
+    }
+    .copyright {
+        display: none;
+    }
+    .navbar {
+        padding: 0;
+        position: static;
+        transform: none;
+    }
+    .navbar .menu-burger {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        top: 0;
+        left: -2vw;
+        position: absolute;
+        width: 100vw;
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100;
+        transition: all .4s ease-in-out;
+        background-color: #010101de;
+        backdrop-filter: blur(30px);
+    }
+    .mobile-menu {
+        position: absolute;
+        margin-top: 0;
+        margin-left: -1vw;
+        width: 101vw;
+        top: -100vh; 
+    }
+    .line-1-menu {
+        background-color: var(--secondColor);
+        height: 2px;
+        width: 60px;
+        transition: .2s linear;
+    }
+    .line-2-menu {
+        background-color: var(--secondColor);
+        height: 2px;
+        width: 90px;
+        transition: .2s linear;
+    }
+    /* close effect */
+    .opened{
+        width: 60px;
+    }
+    .opened .line-1-menu {
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+    .opened .line-2-menu {
+        transform: rotate(45deg);
+        width: 60px;
+        position: absolute;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .nav-links ul li {
+        margin: 5px 0px; 
+        padding-left: 4vw;
+        font-weight: 600;
+        font-size: 2em;
+    }
+    .navbar .nav-links ul li:nth-child(2) {
+     border-top: 1px solid #363636;
+     border-bottom: 1px solid #363636;
+     width: 100vw;
+     padding-top: 2vh;
+     padding-bottom: 2vh;
+    }
+    .navbar .nav-links ul:hover li{
+        filter: blur(0px);
+    }
+    .navbar .nav-links ul li:hover{
+        filter: blur(0px);
+    }
+    .copyright-mobile{
+        display: flex;
+        justify-content: center;
+        transform: translateY(25vh);
+    }
+}

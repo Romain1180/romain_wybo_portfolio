@@ -1,0 +1,44 @@
+/* reset */
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+    font-family: "StretchPro";
+    src: url("../../fonts/StretchPro.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "StretchPro-Basic";
+    src: url("../../fonts/StretchPro-Basic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NeueHaasDisplayRoman";
+    src: url("../../fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* sroll-bar */
+::-webkit-scrollbar {
+    display: none;
+}
+::selection {
+    color: #000000;
+    background-color: white;
+}
+
+
+body{
+    background-color: var(--firtsColor);
+    font-family: 'NeueHaasDisplayRoman', sans-serif;
+    color: var(--secondColor);
+}

@@ -1,0 +1,188 @@
+.skills-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out;
+
+}
+.skills-title h2{
+    text-transform: uppercase;
+    font-size: 11em;
+    font-weight: 400;
+}
+.sticky_patents_2{
+    height: 270vh;
+}
+.sticky_2{
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+}
+.scroll_section_2{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 270vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.blur-bar{
+    position: absolute;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+}
+.cards-container{
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.assist-content{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 80%;
+    align-items: end;
+}
+.card{
+    height: 80%;
+    width: 70vw;
+    margin: 0px 20px 0px;
+    border-radius: 50px;
+    padding: 40px;
+    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+}
+.card-1{
+    background-color: var(--thirdColor);
+    box-shadow: 0 0 10px rgba(80, 80, 80, 0.744);
+}
+.card-2{
+    background-color: #C6C6C6;
+    color:#000000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.744);
+}
+.card-3{
+    background-color: #FFE0B3;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 253, 238, 0.744);
+}
+.card-1 span{
+    color: #c6c6c67e;
+}
+.card-2 span{
+    color: #2d2d2da4;
+}
+.card-3 span{
+    color: #2d2d2da4;
+}
+.content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.top-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-card li{
+    list-style: none;
+    font-size: 2.5em;
+}
+.card-list {
+    width: 50%;
+}
+.bottom-card{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-card h3{
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+.media-video{
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.media-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* card mobile */
+@media screen and (max-width: 900px){
+    .sticky_patents_2{
+        height: auto;
+    }
+    .sticky_2{
+        overflow: visible;
+        position: static;
+        height: auto;
+    }
+    .blur-bar{
+       display: none;
+    }
+    .skills-title h2{
+        font-size: 4em;
+        font-weight: 400;
+    }
+    .cards-container{
+        height: auto;
+        margin: 0px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .assist-content{
+        width: 100%;
+        justify-content: end;
+        height: auto;
+        margin-top: 5vh;
+    }
+    .assist{
+        transform: rotate(90deg);
+    }
+    .card{
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding: 30px;
+        border-radius: 40px;
+        -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    }
+    .top-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-list {
+        width: 100%;
+        margin: 50px 0px 50px 0px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .top-card li{
+        list-style: none;
+        font-size: 1.5em;
+    }
+    .bottom-card h3{
+        font-size: 2em;
+    }
+    .media-video{
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        overflow: hidden;
+    }
+}

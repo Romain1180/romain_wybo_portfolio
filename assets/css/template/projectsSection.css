@@ -1,0 +1,123 @@
+.projets-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    margin-top: 10vh;
+    z-index: -10;
+}
+.projets-title h2{
+    text-transform: uppercase;
+    font-size: 11em;
+    font-weight: 400;
+}
+.projets-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+.projets-structure{
+    display: flex;
+    flex-direction: column;
+}
+.content-projet-1{
+    width: 100%;
+    height: 130vh;
+    border: 1px solid #363636;
+    background-color: var(--firtsColor);
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+/* scene three js */
+.canvas{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 800;
+}
+
+.about-projet{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px 40px 0px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.middle-projets{
+    display: flex;
+    justify-content: space-between;
+}
+.content-projet-2, .content-projet-3{
+    width: 47vw;
+    height: 60vh;
+    border: 1px solid #363636;
+    background-color: var(--secondColor);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.content-projet-4{
+    width: 47vw;
+    height: 60vh;
+    border: 1px solid #363636;
+    background-color: var(--firtsColor);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.new-project{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.content-projet-4 .add-projet {
+    transition: transform 1.5s ease-in-out;
+
+}
+.content-projet-4:hover .add-projet {
+    transform: rotate(540deg);
+}
+
+/* projet mobile */
+@media screen and (max-width: 900px){
+    .projets-title h2{
+        font-size: 4em;
+        font-weight: 400;
+    }
+    .content-projet-1{
+        height: 70vh;
+        border-radius: 40px;
+    }
+    .canvas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+    .middle-projets{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-projet-2, .content-projet-3{
+        width: 100%;
+        height: 27vh;
+        border-radius: 40px;
+    }
+    .content-projet-4{
+        width: 100%;
+        height: 27vh;
+        border-radius: 40px;
+    }
+    .add-projet{
+        width: 70px;
+    }
+}

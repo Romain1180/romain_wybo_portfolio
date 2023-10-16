@@ -1,0 +1,18 @@
+.custom-cursor {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-color: var(--secondColor);;
+    border-radius: 50%;
+    pointer-events: none; /* Permettre aux éléments en dessous d'être cliquables */
+    z-index: 1000;
+    transition: transform .2s ease-out;
+}
+
+@media screen and (max-width: 900px){
+    .custom-cursor {
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+    }
+}
