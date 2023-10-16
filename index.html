@@ -14,7 +14,9 @@
         <div class="video-container">
         <!-- cursor -->
         <div class="custom-cursor"></div>
-            <video src="./assets/videos/bg_video.mp4" id="background-video" playsinline autoplay loop muted></video>
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                <video src="./assets/videos/bg_video.mp4" id="background-video" playsinline autoplay loop muted></video>
                 <div class="sticky_patents">
                     <div class="sticky">
                          <!-- hour -->
@@ -195,7 +197,7 @@
                                 </div>
                             </div>
                         </div>
-
+    
                         <div class="middle-projets">
                             <div class="projets-structure">
                                 <div class="content-projet-2"></div>
@@ -212,7 +214,7 @@
                                 </div>
                             </div>
                         </div>
-
+    
                         <div class="bottom-projets">
                             <div class="projets-structure">
                                 <div class="content-projet-4">
@@ -225,7 +227,7 @@
                         </div>
                     </div>
                   </section>
-
+    
                   <section class="section">
                     <div class="contact-title">
                         <h2>Contact</h2>
@@ -245,6 +247,8 @@
                     </div>
                   </section>
             </div>
+            </div>
+        </div>
     </main>
     
     <!-- progress bar----------------------------------->
@@ -256,9 +260,9 @@
                         <nav class="navbar">
                             <div class="nav-links">
                                 <ul>
-                                    <li id="scrollButton" onclick="scrollToSection1()">à propos</li>
-                                    <li id="scrollButton" onclick="scrollToSection2()">Skills</li>
-                                    <li id="scrollButton" onclick="scrollToSection3()">Projets</li>
+                                    <li id="scrollButton" class="section-link">à propos</li>
+                                    <li id="scrollButton" class="section-link">Skills</li>
+                                    <li id="scrollButton" class="section-link">Projets</li>
                                 </ul>
                                 <p class="copyright-mobile">Copyright© - 2023 All right reserved</p>
                             </div>
@@ -275,7 +279,11 @@
             <div class="progress-bar"></div>
         </div>
     </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+    
+    <script type="module" src="./assets/js/main.js"></script>
     <script type="module" src="./assets/js/three.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/gsap.js"></script> -->
 </body>
 </html>

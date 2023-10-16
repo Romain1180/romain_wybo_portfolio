@@ -1,0 +1,11 @@
+import './effects/cursor.js';
+import './effects/hour.js';
+import './effects/nav.js';
+import './effects/progressBar.js';
+import './effects/stickyScroll.js';
+import './effects/scaleIMG.js';
+import './effects/processList.js';
+import './effects/pictureCursor.js';
+import './effects/scaleProjectTitle.js';
+import './effects/contact.js';
+import './effects/scrollSmoother.js';
