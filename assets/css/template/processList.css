@@ -46,6 +46,12 @@
     border-radius: 100px;
     border: 0px;
 }
+.step-process{
+    transition: 0s !important;
+}
+.line:hover .step-process{
+   opacity: 0% !important;
+}
 .line-1:hover img{
     filter: brightness(0%);
 }

@@ -7,8 +7,8 @@ lineProcess1.addEventListener('mouseover', function(){
   basicCursor.style.backgroundRepeat = 'no-repeat';
   basicCursor.style.backgroundSize = 'cover';
   basicCursor.style.borderRadius = '0%';
-  basicCursor.style.width = '173px';
-  basicCursor.style.height = '245px';  
+  basicCursor.style.width = '200px';
+  basicCursor.style.height = '35px';
 })
 lineProcess1.addEventListener('mouseout', function(){
   basicCursor.style.backgroundImage = 'none';
@@ -25,8 +25,8 @@ lineProcess2.addEventListener('mouseover', function(){
   basicCursor.style.backgroundRepeat = 'no-repeat';
   basicCursor.style.backgroundSize = 'cover';
   basicCursor.style.borderRadius = '0%';
-  basicCursor.style.width = '173px';
-  basicCursor.style.height = '245px';
+  basicCursor.style.width = '200px';
+  basicCursor.style.height = '35px';
 })
 lineProcess2.addEventListener('mouseout', function(){
   basicCursor.style.backgroundImage = 'none';
@@ -43,8 +43,8 @@ lineProcess3.addEventListener('mouseover', function(){
   basicCursor.style.backgroundRepeat = 'no-repeat';
   basicCursor.style.backgroundSize = 'cover';
   basicCursor.style.borderRadius = '0%';
-  basicCursor.style.width = '173px';
-  basicCursor.style.height = '245px';
+  basicCursor.style.width = '200px';
+  basicCursor.style.height = '35px';
 })
 lineProcess3.addEventListener('mouseout', function(){
   basicCursor.style.backgroundImage = 'none';
@@ -61,8 +61,8 @@ lineProcess4.addEventListener('mouseover', function(){
   basicCursor.style.backgroundRepeat = 'no-repeat';
   basicCursor.style.backgroundSize = 'cover';
   basicCursor.style.borderRadius = '0%';
-  basicCursor.style.width = '173px';
-  basicCursor.style.height = '245px';
+  basicCursor.style.width = '200px';
+  basicCursor.style.height = '35px';
 })
 lineProcess4.addEventListener('mouseout', function(){
   basicCursor.style.backgroundImage = 'none';
@@ -79,8 +79,8 @@ lineProcess5.addEventListener('mouseover', function(){
   basicCursor.style.backgroundRepeat = 'no-repeat';
   basicCursor.style.backgroundSize = 'cover';
   basicCursor.style.borderRadius = '0%';
-  basicCursor.style.width = '173px';
-  basicCursor.style.height = '245px';
+  basicCursor.style.width = '200px';
+  basicCursor.style.height = '35px';
 })
 lineProcess5.addEventListener('mouseout', function(){
   basicCursor.style.backgroundImage = 'none';
@@ -97,8 +97,8 @@ lineProcess6.addEventListener('mouseover', function(){
   basicCursor.style.backgroundRepeat = 'no-repeat';
   basicCursor.style.backgroundSize = 'cover';
   basicCursor.style.borderRadius = '0%';
-  basicCursor.style.width = '173px';
-  basicCursor.style.height = '245px';
+  basicCursor.style.width = '200px';
+  basicCursor.style.height = '35px';
 })
 lineProcess6.addEventListener('mouseout', function(){
   basicCursor.style.backgroundImage = 'none';
@@ -115,8 +115,8 @@ lineProcess7.addEventListener('mouseover', function(){
   basicCursor.style.backgroundRepeat = 'no-repeat';
   basicCursor.style.backgroundSize = 'cover';
   basicCursor.style.borderRadius = '0%';
-  basicCursor.style.width = '173px';
-  basicCursor.style.height = '245px';
+  basicCursor.style.width = '200px';
+  basicCursor.style.height = '35px';
 })
 lineProcess7.addEventListener('mouseout', function(){
   basicCursor.style.backgroundImage = 'none';
