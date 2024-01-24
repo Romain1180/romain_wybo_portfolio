@@ -43,6 +43,8 @@
 .line:hover{
     background-color: var(--secondColor);
     color: var(--firtsColor);
+    border-radius: 100px;
+    border: 0px;
 }
 .line-1:hover img{
     filter: brightness(0%);
